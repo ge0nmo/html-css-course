@@ -3,6 +3,21 @@
     padding: 0;
 }
 
+.sale {
+    content: "SALE";
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    left: -34px;
+    top: -17px;
+    padding: 7px 15px;
+    display: inline-block;
+}
+
 body {
     font-family: sans-serif;
     line-height: 1.4;
@@ -14,6 +29,7 @@ body {
     border: 4px solid black;
     width: 825px;
     margin: 50px auto;
+    position: relative;
 }
 
 .product-title {
@@ -40,11 +56,85 @@ body {
 
 .more-info:link, .more-info:visited {
     color: black;
+    margin-bottom: 30px;
+    display: inline-block;
 }
 
 .more-info:hover, .more-info:active {
     text-decoration: none;
 }
+
+.more-info::after {
+    content: "";
+    background-color: black;
+}
+
+.box {
+    margin-top: 10px;
+    display: flex;
+}
+
+.color {
+    background-color: #000;
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.color-black {
+    background-color: black;
+}
+
+.color-blue {
+    background-color: #f0bf1e;
+}
+
+.color-red {
+    background-color: #ec2f2f;
+
+}
+
+.color-green {
+    background-color: #90cc20;
+}
+
+.color-brown {
+    background-color: saddlebrown;
+}
+
+.color-yellow {
+    background-color: lightgoldenrodyellow;
+}
+
+/*.color-box{
+    width: 25px;
+    height: 25px;
+}
+
+.black-box {
+    background-color: black;
+}
+
+.red-box {
+    background-color: red;
+}
+
+.yellow-box {
+    background-color: lightgoldenrodyellow;
+}
+
+.blue-box {
+    background-color: dodgerblue;
+}
+
+.green-box {
+    background-color: darkseagreen;
+}
+
+.brown-box {
+    background-color: saddlebrown;
+}*/
 
 /* PRODUCT DETAILS */
 .details-title {
